@@ -12,4 +12,25 @@
 
 对类归档
 
+`
+    //创建需要归档的类
+    Car *car = [[Car alloc] init];
+    car.brand = @"BMW";
+    car.color = [UIColor redColor];
+    
+    //归档文件路径
+    NSString *filePath = [DOCUMENTSDIR stringByAppendingPathComponent:FILENAME];
+    
+    //归档
+    [NSKeyedArchiver archiveRootObject:car toFile:filePath];
+`
+
 对类解档
+
+`
+    //解档文件路径
+    NSString *filePath = [DOCUMENTSDIR stringByAppendingPathComponent:FILENAME];
+    
+    //解档
+    Car *car = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+`
