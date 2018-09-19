@@ -23,19 +23,32 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    //归档测试
     [self archiveTest];
-//    [self unarchiveTest];
+    
+    //解档测试
+    //[self unarchiveTest];
 }
 
 /**
  *  archive
  */
 - (void)archiveTest {
+    //创建需要归档的类
     Car *car = [[Car alloc] init];
     car.brand = @"BMW";
-    car.color = @"red";
+    car.color = [UIColor redColor];
     
+    /* 此处代码展示类对象的属性中包含其它类对象的情况
+    Car *subCar = [[Car alloc] init];
+    subCar.brand = @"Toyota";
+    subCar.color = [UIColor blackColor];
+    car.subCar = subCar;
+     */
+    //归档文件路径
     NSString *filePath = [DOCUMENTSDIR stringByAppendingPathComponent:FILENAME];
+    
+    //归档
     [NSKeyedArchiver archiveRootObject:car toFile:filePath];
     
     NSLog(@"%@", filePath);
@@ -45,10 +58,13 @@
  *  unarchive
  */
 - (void)unarchiveTest {
+    //解档文件路径
     NSString *filePath = [DOCUMENTSDIR stringByAppendingPathComponent:FILENAME];
+    
+    //解档
     Car *car = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
     
-    NSLog(@"My car brand is : >%@<, my car color is : >%@<",car.brand, car.color);
+    NSLog(@"\nMy car brand is : >%@<,\nmy car color is : >%@<\nmy car subCar is : >%@<,\n\tmy car subCar.brand is : >%@<,\n\tmy car subCar.color is : >%@<",car.brand, car.color, car.subCar, car.subCar.brand, car.subCar.color);
 }
 
 

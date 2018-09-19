@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Car : NSObject
 
 @property (nonatomic, copy) NSString *brand;
-@property (nonatomic, copy) NSString *color;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, strong) Car *subCar;
 
 + (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
