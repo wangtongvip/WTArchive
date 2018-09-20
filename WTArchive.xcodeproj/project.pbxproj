@@ -14,7 +14,7 @@
 		748B7B1E2152186A00B700E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748B7B1C2152186A00B700E4 /* LaunchScreen.storyboard */; };
 		748B7B212152186A00B700E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B7B202152186A00B700E4 /* main.m */; };
 		748B7B2D2152215200B700E4 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B7B2C2152215200B700E4 /* Car.m */; };
-		748B7B3021522E4B00B700E4 /* NSObject+Archive.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B7B2E21522E4B00B700E4 /* NSObject+Archive.m */; };
+		748B7B3021522E4B00B700E4 /* NSObject+WTArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B7B2E21522E4B00B700E4 /* NSObject+WTArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		748B7B202152186A00B700E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		748B7B2B2152215200B700E4 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		748B7B2C2152215200B700E4 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
-		748B7B2E21522E4B00B700E4 /* NSObject+Archive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archive.m"; sourceTree = "<group>"; };
-		748B7B2F21522E4B00B700E4 /* NSObject+Archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archive.h"; sourceTree = "<group>"; };
+		748B7B2E21522E4B00B700E4 /* NSObject+WTArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WTArchive.m"; sourceTree = "<group>"; };
+		748B7B2F21522E4B00B700E4 /* NSObject+WTArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WTArchive.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 		748B7B272152189C00B700E4 /* WTArchive */ = {
 			isa = PBXGroup;
 			children = (
-				748B7B2F21522E4B00B700E4 /* NSObject+Archive.h */,
-				748B7B2E21522E4B00B700E4 /* NSObject+Archive.m */,
+				748B7B2F21522E4B00B700E4 /* NSObject+WTArchive.h */,
+				748B7B2E21522E4B00B700E4 /* NSObject+WTArchive.m */,
 			);
 			path = WTArchive;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				748B7B2D2152215200B700E4 /* Car.m in Sources */,
 				748B7B162152186800B700E4 /* ViewController.m in Sources */,
 				748B7B212152186A00B700E4 /* main.m in Sources */,
-				748B7B3021522E4B00B700E4 /* NSObject+Archive.m in Sources */,
+				748B7B3021522E4B00B700E4 /* NSObject+WTArchive.m in Sources */,
 				748B7B132152186800B700E4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

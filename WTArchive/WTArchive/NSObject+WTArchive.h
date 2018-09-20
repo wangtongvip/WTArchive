@@ -1,5 +1,5 @@
 //
-//  NSObject+Archive.h
+//  NSObject+WTArchive.h
 //  WTArchive
 //
 //  Created by WT on 2018/9/19.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Archive)
+@interface NSObject (WTArchive)
 
 @end

@@ -27,7 +27,7 @@
     [self archiveTest];
     
     //解档测试
-    //[self unarchiveTest];
+//    [self unarchiveTest];
 }
 
 /**
@@ -45,6 +45,7 @@
     subCar.color = [UIColor blackColor];
     car.subCar = subCar;
      */
+    
     //归档文件路径
     NSString *filePath = [DOCUMENTSDIR stringByAppendingPathComponent:FILENAME];
     
